@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> BNguyenPortfolio </title>
+		<meta name="description" content=" Portfolio: artifacts and description of how I've grown as a student at DRSS"/>
+		<meta name="keywords" content="growth, portfolio, artifacts, reflection"/>
+		<meta name="author" content="Bryan Nguyen"/>
+		<meta name="copyright" content="2022, Dayton Regional STEM School."/>
+		<meta name="rating" content="general"/>
+		<link href="SiteStyle/SiteStyleTesting.css" rel="stylesheet" type="text/css"/>
+		<style>
+		#body {
+		padding-top: 2%;
+		padding-bottom: 6.9%;
+	}
+	</style>
+	</head>
+	<body>
+		<a id="top"></a>
+		<header>
+		<span id="navigation" onclick="openNav()">&#9776;</span>
+		<h1>Bryan Nguyen </h1>
+		</header>
+		<div id="body">
+		<nav id="nav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<button class="dropdown"> Projects
+				<span class="i">&#9776; </span>
+			</button>
+			<div class="dropdown-stuff">
+				<a href="projects.html">Projects Page </a>
+				<a href="codingprogression.html">Coding Progression</a>
+				<a href="7thgrade.html">7th grade </a>
+				<a href="8thgrade.html">8th grade </a>
+				<a href="9thgrade.html">9th grade </a>
+				<a href="10thgrade.html">10th grade </a>
+				<a href="11thgrade.html">11th grade </a>
+				<a href="12thgrade.html">12th grade </a>
+			</div>
+			<button class="dropdown"> Experience
+			<span class="i">&#9776; </span>
+			</button>
+			<div class="dropdown-stuff">
+				<a href="experience.html">Experience</a>
+				<a href="internship.html">Internship</a>
+			</div>
+			<a href="resume.html">Resume</a>
+		</nav>
+		<div id="main-body">
+		<div id="qualites">
+		<img id="qualities" src="Images/QuestionMark.png" width="500px" height="500px" alt="A picture of a question mark"></img>
+		<h2>Inquiry</h2>
+		<p>The ability to ask questions about stuff you don't know or want to know. You use Inquiry to ask your peers and your teacher. When I say the ability I do not mean that you have to able to ask question because everyone
+		can do that but I am saying that you can ask clear question that relates to what you want to learn. Inquiry also helps you build a mindset to want to learn.</p>
+		<img id="qualities" src="Images/turtle.png" width="500px" height="500px" alt="A picture of a turtle walking"></img>
+		<h2>Persistance</h2>
+		<p>The ability to keep on keeping on even when struggling. Persistence can help you keep from stressing out which can make the thing you are working on a lot better. It also helps you to the most of what you learn
+		because sometimes when you get bored and you don't want to learn anymore so you stop before you could fully understand what you are learning.</p>
+		<img id="qualities" src="Images/Collab.png" width="500px" height="500px" alt="people trying to climb out a hole"></img>
+		<h2>Collaboration</h2>
+		<p>The ability to work in groups and be effective. Collaboration in my opinion is the most important quality because you practically have to use it for the most of your life. Collaboration can help you help you 
+		successfully work in groups which is needed our school snice you work in groups a lot and for about every single job you will ever work at unless you work at home.</p>
+		<img id="qualities" src="Images/talk.png" width="500px" height="500px" alt="people talking with each other"></img>
+		<h2>Communication</h2>
+		<p>The ability to talk to others in a clear and effective way. Talking in a clear and effective way means that you speak in a way that people can understand, so that means not speaking so fast that nobody can hear 
+		you but also not talking so slow that it takes you 10 minutes to complete a sentence. Also speaking fluently and not stuttering and talking at an appropriate volume is all part of the communication quality.</p>
+		<img id="qualities" src="Images/CoolRainbow.png" width="500px" height="500px" alt="a rainbowish design"></img>
+		<h2>Creativity</h2>
+		<p>The ability to think outside of the box. Thinking outside the box means to think in a way that most people would not think. When you use creativity you can be very unique.</p>
+		</div>
+		</div>
+		<<p>&nbsp; </p>
+		</div>
+		<footer>
+			<div id="outsidelink">
+			<h2>Outside Links</h2>
+			<p><a href="http://daytonstemschool.org/"
+						target="_blank"> The Dayton Regional STEM School </a></p>
+			</div>
+			<p><a href="#top"> Return to Top</a></p>
+			<p>&copy;2022. Bryan Nguyen. All Rights Reserved. </p>
+		</footer><!-- end of footer -->
+<script>
+var dropdown = document.getElementsByClassName("dropdown");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+function openNav() {
+  document.getElementById("nav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("nav").style.display = "none";
+}
+</script>
+		
+	</body>
+</html>
