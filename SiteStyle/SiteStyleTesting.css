@@ -1,0 +1,435 @@
+@charset "utf-8";
+/* General Website Design */
+body { 
+	background-color: #05386B;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Lato", sans-serif;
+}
+p {
+	font-size: 20px;
+}
+a { 
+	color: #EDF5E1;
+	text-decoration: none
+}
+a:hover {
+	font-size: 40px;
+}
+ul {
+	list-style-type:none;
+}
+li {
+	text-decoration: none;
+}
+#main-body p {
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 25px;
+	color: #05386B;
+	background-color:#5CDB95;
+}
+#main-body blockquote {
+	color: #053869;
+	font-size: 25px;
+}
+nav {
+	float: right;
+}
+blockquote{
+	text-align:center;
+}
+#navigation {
+	padding-left: 2%;
+}
+header span {
+	float: left;
+	font-size: 45px;
+	cursor: pointer;
+	color: #EDF5E1
+}
+footer {
+	background-color: #05386B;
+	color: #EDF5E1;
+	padding: 1%;
+	text-align: center	;
+}
+footer a:visited, a:link {
+	color: #EDF5E1;
+}
+footer a:hover, a:active {
+	color: #5CDB95;
+}
+footer a {
+	text-decoration: none;
+}
+footer p {
+	padding-top: 1% ;
+}
+h1 {
+	margin-left: 42.3%;
+	color: #EDF5E1;
+	font-size: 50px;
+}
+h2 {
+	font-size: 40px;
+}
+h3 {
+	color: #EDF5E1;
+}
+#body {
+	float: left;
+	background-color: #5CDB95;
+	color: #392C0A;
+	padding: 5%;
+}
+#body h1 {
+	color: #FFC229;
+	font-size: 100px;
+}
+#body h2 {
+	font-size: 40px;
+	color: #EDF5E1;
+	text-align: center;
+}
+#body h3 {
+	font-size: 24px;
+	text-align: center;
+}
+.text_center {
+	text-align: center;
+}
+.image_left img {
+	float: left;
+}
+.image_right img {
+	float: right;
+}
+.image_right p {
+	text-align: right;
+	position: relative;
+}
+
+/* SlideShows */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: #EDF5E1;
+  font-size: 36px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #05386B;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #EDF5E1;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* Navigation Stuff */
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #05386B;
+  overflow-x: hidden;
+  padding-top: 60px;
+  color: #392C0A;
+}
+.sidenav a:hover {
+  color: #5CDB95;
+}
+.sidenav a, .dropdown {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #EDF5E1;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.dropdown a:hover {
+	color: #5CDB95;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 54px;
+  margin-left: 70%;
+  color: #EDF5E1;
+}
+.closebtn {
+	float: right;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Dropdown */
+.active {
+  background-color: #05386B;
+  color:  #EDF5E1;
+}
+.dropdown-stuff {
+  display: none;
+  background-color: #05386B;
+  color:  #EDF5E1;
+  padding-left: 10%;
+}
+.dropdown-stuff a {
+  color:  #EDF5E1;
+}
+.i {
+  float: right;
+  padding-right: 8px;
+}
+/* Projects Page Design */
+.project {
+	text-align:center;
+	margin: 0;
+	padding: 0;
+}
+.project a {
+	text-decoration: none;
+	margin:0;
+	padding:0;
+	color: #FFC229;
+}
+.project h1 {
+	margin: 0;
+	padding: 2%;
+}
+.gradelinks {
+	margin-top: 5%;
+	margin-left: 6%;
+	background-color:#05386b;
+	display:inline-block;
+	cursor:pointer;
+	color:#edf5e1;
+	font-family:Verdana;
+	font-size:28px;
+	font-weight:bold;
+	padding:23px 42px;
+	text-decoration:none;
+}
+.gradelinks:hover {
+	background-color:#edf5e1;
+	color: #05386B;
+	font-size: 28px;
+	-moz-box-shadow: 21px -11px 0px 0px #aaaaaa;
+	-webkit-box-shadow: 21px -11px 0px 0px #aaaaaa;
+	box-shadow: 21px -11px 0px 0px #aaaaaa;
+}
+.gradelinks:active {
+	position:relative;
+	top: 1px;
+}
+
+/* 5 Qualities Page Design */
+#qualities p {
+	float: right;
+}
+/* Coding Progression Page Design */
+.7thgrade {
+	padding-bottom: 10%;
+	margin: 10%;
+	border-bottom: red solid 1px;
+}
+
+/* 8th grade page Design */
+.8thgradevideo video {
+	margin-left: 40%;
+}
+#geniushourlink {
+	background-color: #FD6027;
+	border: 20px groove gray;
+	width: 20%;
+	height: 30%;
+	text-align: center;
+	margin-left: 39%;
+}
+#geniushourlink a {
+	text-decoration: none;
+}
+#geniushourlink a:link {
+	color: #392C0A;
+}
+#geniushourlink a:hover {
+	background-color: #FF9966;
+	color: #FD6027;
+}
+#geniushourlink a:visited {
+	color: #392C0A;
+}
+
+/* Genius Hour Page Design */
+#genius_hour {
+	color: #05386B;
+	font-size: 20px;
+}
+#computer {
+	float: left;
+	width: 48.5%;
+	padding: 6.8px;
+	border-right:10px groove #05386B;
+}
+#computer img {
+	float: right;
+}
+#supercomputer {
+	float: right;
+	width: 48.5%;
+	padding: 8.2px;
+	text-align: left;
+}
+#supercomputer img {
+	float: right;
+}
+.footer {
+	clear: both;
+	padding: 10px;
+	border-top: 3px solid red;
+}
+.indent {
+	margin-left: 15%;
+}
+.indent p {
+	text-align: left;
+	width: 100%;
+}
+#CPU {
+	float:left;
+	width: 25%;
+}
+#case {
+	float: left;
+	width: 25%;
+}
+#motherboard {
+	float:left;
+	width:25%;
+}
+#GPU {
+	float:left;
+	width:25%;
+}
+#PSU {
+	float:left;
+	width:25%;
+}
+#hard-drive {
+	float:left;
+	width:25%;
+}
+#optical-drive {
+	float:left;
+	width:25%;
+}
+#RAM {
+	float:left;
+	width:25%;
+}
+#images {
+	float: right;
+}
+#secondary {
+	clear: both;
+}
+#cooling {
+	float: left; 
+	width: 33%;
+}
+#ALU {
+	float: left;
+	width: 33%;
+}
+#control-unit {
+	float: left;
+	width: 33%;
+}
+#silicon {
+	float:left;
+	width: 25%;
+}
+#quantum {
+	float:left;
+	width:25%;
+}
+#DNA {
+	float:left;
+	width:25%;
+}
+#optical {
+	float:left;
+	width:25%;
+}
+#difference {
+	float: right;
+	width: 48.5%;
+	padding: 8.2px;
+	text-align: left;
+}
+#similarities {
+	float: left;
+	width: 48.5%;
+	padding: 6.8px;
+	border-right:10px groove #05386B;
+}
+#conclusion {
+	margin-top: 5%;
+}
+
+/* 9th Grade Page Design */
+#5paragraphessay p {
+	text-indent: 50px;
+}
+#5paragraphessay img {
+	float:none;
+}
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+	padding: 5%;
+}
